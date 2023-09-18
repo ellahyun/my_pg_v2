@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".club_prog">
+
+    <TextView
+        android:id="@+id/tV_club"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/pretendardvariable_semibold"
+        android:letterSpacing="-0.03"
+        android:text="클럽"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/prog_LinearLayout1"
+        android:layout_width="411dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/prog_relativeLayout1_1"
+            android:layout_width="137dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tV_notime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="14.5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="14.5dp"
+                android:fontFamily="@font/pretendardvariable_medium"
+                android:letterSpacing="-0.08"
+                android:text="NO TIME피드"
+                android:textAlignment="center"
+                android:textColor="#111111"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/prog_relativeLayout1_2"
+            android:layout_width="137dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tV_diary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="23.5dp"
+                android:layout_marginTop="14.5dp"
+                android:layout_marginEnd="23.5dp"
+                android:layout_marginBottom="14.5dp"
+                android:fontFamily="@font/pretendardvariable_medium"
+                android:letterSpacing="-0.08"
+                android:text="YES! 다이어리"
+                android:textAlignment="center"
+                android:textColor="#111111"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/prog_relativeLayout1_3"
+            android:layout_width="137dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tV_progot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="14.5dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="14.5dp"
+                android:fontFamily="@font/pretendardvariable_semibold"
+                android:letterSpacing="-0.08"
+                android:text="프로 갓생러"
+                android:textAlignment="center"
+                android:textColor="#fa4756"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/prog_LinearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="700dp"
+        android:background="#f7f7f7"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prog_LinearLayout1">
+
+        <LinearLayout
+            android:id="@+id/prog_LinearLayout3"
+            android:layout_width="411dp"
+            android:layout_height="36dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/prog_relativeLayout3_1"
+                android:layout_width="205.5dp"
+                android:layout_height="35dp">
+
+                <ImageButton
+                    android:id="@+id/imB_pinkbox"
+                    android:layout_width="182dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/pinkbox"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/tV_exercise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/imB_pinkbox"
+                    android:layout_alignEnd="@+id/imB_pinkbox"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/pretendardvariable_medium"
+                    android:gravity="center"
+                    android:letterSpacing="-0.09"
+                    android:text="운동"
+                    android:textAlignment="center"
+                    android:textColor="#111111"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/prog_relativeLayout3_2"
+                android:layout_width="205.5dp"
+                android:layout_height="35dp">
+
+                <ImageButton
+                    android:id="@+id/imB_whitebox"
+                    android:layout_width="182dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="24dp"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/whitebox"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/tV_study"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/imB_whitebox"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/pretendardvariable_medium"
+                    android:gravity="center"
+                    android:letterSpacing="-0.09"
+                    android:text="공부"
+                    android:textAlignment="center"
+                    android:textColor="#a1a1a1"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/prog_relativeLayout2_1"
+            android:layout_width="411dp"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/imV_feedbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="18dp"
+                app:srcCompat="@drawable/feedbox" />
+
+            <TextView
+                android:id="@+id/tV_hamo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/imV_feedbox1"
+                android:layout_alignTop="@+id/imV_feedbox1"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/pretendardvariable_medium"
+                android:letterSpacing="-0.08"
+                android:text="하모0718"
+                android:textColor="#29169F"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tV_q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imV_feedbox1"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/tV_hamo"
+                android:fontFamily="@font/pretendardvariable_medium"
+                android:letterSpacing="-0.08"
+                android:text="님의 질문"
+                android:textColor="#797979"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tV_letter1"
+                android:layout_width="312dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tV_hamo"
+                android:layout_alignStart="@+id/imV_feedbox1"
+                android:layout_alignEnd="@+id/imV_feedbox1"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="14dp"
+                android:fontFamily="@font/pretendardvariable_medium"
+                android:text="Q. 안녕하세요 요즘 헬스를 시작한 헬린이입니다. 유산소가 먼저인가요 무산소가 먼저인가요? 그리고 초보인데 PT를 받아도 되나요? 멘토님들의 의견이 궁금합니다."
+                android:textColor="#111111"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/prog_divider1"
+                android:layout_width="340dp"
+                android:layout_height="1dp"
+                android:layout_alignStart="@+id/imV_feedbox1"
+                android:layout_alignEnd="@+id/imV_feedbox1"
+                android:layout_alignBottom="@+id/imV_feedbox1"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="40dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:id="@+id/prog_LinearLayout4"
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/imV_feedbox1"
+                android:layout_alignEnd="@+id/imV_feedbox1"
+                android:layout_alignBottom="@+id/imV_feedbox1"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/prog_relativeLayout4_1"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp">
+
+                    <ImageButton
+                        android:id="@+id/imB_heart1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/heart"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/tV_good1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toEndOf="@+id/imB_heart1"
+                        android:fontFamily="@font/pretendardvariable_medium"
+                        android:text="좋아요"
+                        android:textColor="#c9c9c9" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/prog_relativeLayout4_2"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp">
+
+                    <ImageButton
+                        android:id="@+id/imB_cm1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="6dp"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/comment"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/tV_cm1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="9dp"
+                        android:layout_toEndOf="@+id/imB_cm1"
+                        android:fontFamily="@font/pretendardvariable_medium"
+                        android:text="답글 2개"
+                        android:textColor="#c9c9c9"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/prog_relativeLayout2_2"
+            android:layout_width="411dp"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/imV_feedbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="35.5dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="35.5dp"
+                android:layout_marginBottom="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/feedbox" />
+
+            <TextView
+                android:id="@+id/tV_meow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/imV_feedbox2"
+                android:layout_alignTop="@+id/imV_feedbox2"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/pretendardvariable_medium"
+                android:letterSpacing="-0.08"
+                android:text="냥냥펀치"
+                android:textColor="#29169F"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tV_q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imV_feedbox2"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/tV_meow"
+                android:fontFamily="@font/pretendardvariable_medium"
+                android:letterSpacing="-0.08"
+                android:text="님의 질문"
+                android:textColor="#797979"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tV_letter2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tV_meow"
+                android:layout_alignStart="@+id/imV_feedbox2"
+                android:layout_alignEnd="@+id/imV_feedbox2"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="14dp"
+                android:fontFamily="@font/pretendardvariable_medium"
+                android:text="최근 힙업을 위해 스쿼트를 하고 있는데 할 때마다 무릎이 아파요. 분명 유튜브 보고 따라했는데 엉덩이에 오는 자극보다 무릎의 통증이 더 심한데 왜 그러는 걸까요??? 멘토님들 답변 부탁드립니다!"
+                android:textColor="#111111"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/prog_divider2"
+                android:layout_width="340dp"
+                android:layout_height="1dp"
+                android:layout_alignStart="@+id/imV_feedbox2"
+                android:layout_alignEnd="@+id/imV_feedbox2"
+                android:layout_alignBottom="@+id/imV_feedbox2"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="40dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:id="@+id/prog_LinearLayout5"
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/imV_feedbox2"
+                android:layout_alignEnd="@+id/imV_feedbox2"
+                android:layout_alignBottom="@+id/imV_feedbox2"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/prog_relativeLayout5_1"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp">
+
+                    <ImageButton
+                        android:id="@+id/imB_heart2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/heart"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/tV_good2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toEndOf="@+id/imB_heart2"
+                        android:fontFamily="@font/pretendardvariable_medium"
+                        android:text="좋아요"
+                        android:textColor="#c9c9c9" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/prog_relativeLayout5_2"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp">
+
+                    <ImageButton
+                        android:id="@+id/imB_cm2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="6dp"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/comment"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/tV_cm2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="9dp"
+                        android:layout_toEndOf="@+id/imB_cm2"
+                        android:fontFamily="@font/pretendardvariable_medium"
+                        android:text="답글 1개"
+                        android:textColor="#c9c9c9" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/prog_relativeLayout2_3"
+            android:layout_width="411dp"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/imV_feedbox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="35.5dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="35.5dp"
+                android:layout_marginBottom="18dp"
+                app:srcCompat="@drawable/feedbox" />
+
+            <TextView
+                android:id="@+id/tV_exbas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/imV_feedbox3"
+                android:layout_alignTop="@+id/imV_feedbox3"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/pretendardvariable_medium"
+                android:letterSpacing="-0.08"
+                android:text="헬린이1031"
+                android:textColor="#29169F"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tV_q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imV_feedbox3"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/tV_exbas"
+                android:fontFamily="@font/pretendardvariable_medium"
+                android:text="님의 질문"
+                android:textColor="#111111"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tV__letter3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tV_exbas"
+                android:layout_alignStart="@+id/imV_feedbox3"
+                android:layout_alignEnd="@+id/imV_feedbox3"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="14dp"
+                android:fontFamily="@font/pretendardvariable_medium"
+                android:text="Q. 최근 몸을 키우기 위해 덤벨과 바벨 운동을 시작했는데 횟수가 몇 번이 적당한지 모르겠습니다. 무게는 무리가 가지 않는 선으로 지키고 있는데 자극이 오는지 안오는지 모르겠습니다. 멘토님들 답변해주세요 :)"
+                android:textColor="#111111"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/prog_divider3"
+                android:layout_width="340dp"
+                android:layout_height="1dp"
+                android:layout_alignStart="@+id/imV_feedbox3"
+                android:layout_alignEnd="@+id/imV_feedbox3"
+                android:layout_alignBottom="@+id/imV_feedbox3"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="40dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/prog_LinearLayout6"
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/imV_feedbox3"
+                android:layout_alignEnd="@+id/imV_feedbox3"
+                android:layout_alignBottom="@+id/imV_feedbox3"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/pcm_relativeLayout3_1"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp">
+
+                    <ImageButton
+                        android:id="@+id/imB_heart3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/heart"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/tV_cmgood1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toEndOf="@+id/imB_heart3"
+                        android:fontFamily="@font/pretendardvariable_medium"
+                        android:text="좋아요"
+                        android:textColor="#c9c9c9" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/prog_relativeLayout6_2"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp">
+
+                    <ImageButton
+                        android:id="@+id/imB_cmcm1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="6dp"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/comment"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/tV_cmcm1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="9dp"
+                        android:layout_toEndOf="@+id/imB_cmcm1"
+                        android:fontFamily="@font/pretendardvariable_medium"
+                        android:text="답글"
+                        android:textColor="#c9c9c9" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imB_cmredplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="120dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/redplus"
+        tools:ignore="SpeakableTextPresentCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

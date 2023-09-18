@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".prog_post">
+
+    <ImageButton
+        android:id="@+id/imB_ptleftarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/leftarrow"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tV_ptask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/pretendardvariable_extrabold"
+        android:letterSpacing="-0.06"
+        android:text="질문하기"
+        android:textColor="#464646"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/imB_ptleftarrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/post_LinearLayout1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdoB_ex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="0dp"
+            android:minHeight="48dp"
+            android:text="운동"
+            android:textColor="#FA4756" />
+
+        <RadioButton
+            android:id="@+id/rdoB_study"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp"
+            android:minHeight="48dp"
+            android:text="공부"
+            android:textColor="#FA4756" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/post_LinearLayout2"
+        android:layout_width="411dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_LinearLayout1">
+
+        <RelativeLayout
+            android:id="@+id/post_relativeLayout2"
+            android:layout_width="411dp"
+            android:layout_height="600dp">
+
+            <ImageView
+                android:id="@+id/imV_qbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginEnd="18dp"
+                app:srcCompat="@drawable/qbox" />
+
+            <EditText
+                android:id="@+id/eT_ask"
+                android:layout_width="340dp"
+                android:layout_height="480dp"
+                android:layout_alignStart="@id/imV_qbox"
+                android:layout_alignTop="@id/imV_qbox"
+                android:layout_alignEnd="@+id/imV_qbox"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="7dp"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="궁금한 내용을 질문해 주세요."
+                android:inputType="textPersonName" />
+
+            <ImageButton
+                android:id="@+id/imB_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="21dp"
+                android:background="@android:color/transparent"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                app:srcCompat="@drawable/send"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
